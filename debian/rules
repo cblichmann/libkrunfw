@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+
+MAKEFLAGS += --no-print-directory
+
+override_dh_auto_clean:
+
+override_dh_clean:
+
+override_dh_strip:
+
+override_dh_auto_install:
+	$(MAKE) \
+	  DESTDIR=$$(pwd)/debian/libkrunfw \
+	  PREFIX=/usr \
+	  LIBDIR_Linux=lib/x86_64-linux-gnu \
+	  install
+
+%:
+	dh $@ --parallel

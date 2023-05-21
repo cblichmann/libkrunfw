@@ -1,0 +1,22 @@
+Source: libkrunfw
+Maintainer: Christian Blichmann <mail@blichmann.eu>
+Section: admin
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               make,
+               libc6-dev,
+               python3-pyelftools
+Standards-Version: 3.9.6
+Homepage: https://github.com/google/pawn
+
+Package: libkrunfw
+Architecture: amd64
+Depends: ${misc:Depends}
+Description: A dynamic library bundling the guest payload consumed by libkrun 
+ libkrunfw is a library bundling a Linux kernel in a dynamic library in a way
+ that can be easily consumed by libkrun.
+ .
+ By having the kernel bundled in a dynamic library, libkrun can leave to the
+ linker the work of mapping the sections into the process, and then directly
+ inject those mappings into the guest without any kind of additional work nor
+ processing.
