@@ -1,9 +1,15 @@
+libkrunfw (4.0.0) UNRELEASED; urgency=medium
+
+  * Rebase on a 6.4.7 kernel
+
+ -- Christian Blichmann <mail@blichmann.eu>  Sat, 26 Aug 2023 15:21:57 +0200
+
 libkrunfw (3.12.0) UNRELEASED; urgency=medium
 
   * Initial release.
-  *  Force bundle alignment to 16K by @slp in #45
-  *  Force bundle alignment to 64K by @ericcurtin in #46
-  *  Makefile: use implicit CC variable instead of hardcoding gcc by @NickCao in #44
-  *  Rebase kernel on v6.2.14 by @slp in #47
+  * Force bundle alignment to 16K by @slp in #45
+  * Force bundle alignment to 64K by @ericcurtin in #46
+  * Makefile: use implicit CC variable instead of hardcoding gcc by @NickCao in #44
+  * Rebase kernel on v6.2.14 by @slp in #47
 
  -- Christian Blichmann <mail@blichmann.eu>  Sat, 20 May 2023 21:06:54 +0200
